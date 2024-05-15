@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tomorrow</title>
+</head>
+<body>
+    <script>
+        // Dado um nome de aluno e suas quatro notas, calcule e apresente a sua média final. Considere duas casas decimais. A resposta deve ser: A média do aluno <nome> é <média>.
+
+        function calculaMediaFinal(nota1, nota2, nota3, nota4) {
+            const somaNotas = nota1 + nota2 + nota3 + nota4;
+            const media = somaNotas / 4;
+            return media.toFixed(2);
+        }
+
+        const nomeAluno = "Igor";
+        const nota1 = 8.5;
+        const nota2 = 7.0;
+        const nota3 = 9.2;
+        const nota4 = 6.8;
+
+        const mediaFinal = calculaMediaFinal(nota1, nota2, nota3, nota4);
+
+        document.write("<h1>Médias do aluno com HTML e JS:</h1>");
+        document.write(`A média do aluno ${nomeAluno} é ${mediaFinal}.`);
+    </script>
+    
+</body>
+</html>
