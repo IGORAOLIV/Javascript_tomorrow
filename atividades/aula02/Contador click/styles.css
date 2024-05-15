@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinhar conteúdo no topo da página */
+    padding-top: 20px; /* Espaço superior para o conteúdo */
+}
+
+#counter {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#incrementButton {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    font-weight: bold;
+}
+
+#decrementButton {
+    background-color: #FF5733; /* Vermelho */
+    color: white;
+    font-weight: bold;
+}
+
+#resetButton {
+    background-color: #3498db; /* Azul */
+    color: white;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: azure; /* Cor de fundo pastel - Azul claro */
+    color: #333; /* Cor de texto mais escura para contraste */
+    text-align: center;
+    padding: 10px;
+}
