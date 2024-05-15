@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tomorrow</title>
+</head>
+<body>
+    <!-- //Dado o preço e quantidade de um produto qualquer, calcule seu valor e
+    //apresente o resultado com até 3 casas decimais. -->
+    <script>
+        function calculaValorTotal(preço, quantidade) {
+            const valorTotal = preço * quantidade;
+            return valorTotal.toFixed(3);
+        }
+
+        const preçoProduto = 4.657;
+        const quantidadeProduto = 10;
+        const resultado = calculaValorTotal(preçoProduto, quantidadeProduto);
+
+        document.write("<h2>Preço e quantidade com HTML e JS: </h2>");
+        document.write(`<h4>O valor do produto é: ${preçoProduto}</h4>`);
+        document.write(`<h4>A quantidade é: ${quantidadeProduto}</h4>`);
+        document.write(`<h4>O valor total é: $${resultado}</h4>`)
+        
+    </script>
+  
+    
+</body>
+</html>

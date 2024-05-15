@@ -6,8 +6,8 @@ function calculaValorTotal(preço, quantidade) {
   return valorTotal.toFixed(3);
 }
 
-const preçoProduto = 25.99;
-const quantidadeProduto = 5;
+const preçoProduto = 5;
+const quantidadeProduto = 10;
 const resultado = calculaValorTotal(preçoProduto, quantidadeProduto);
 
 console.log(`O valor total do produto é R$${resultado}.`);
