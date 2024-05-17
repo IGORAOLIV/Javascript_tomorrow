@@ -15,6 +15,10 @@ function calcularIMC() {
   // Atribua o resultado do imc à variável do HTML
   resultIMC.value = imc.toFixed(2);
 
+  for (let i = 0; i < faixasIMC.length; i++) {
+    faixasIMC[i].style.background = 'none';    
+  }
+
   if (imc < 18.5) {
     document.querySelector('.level1').style.background = "#FF5733"; 
   } else if (imc >= 18.5 && imc < 25) {
