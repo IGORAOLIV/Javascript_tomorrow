@@ -43,6 +43,7 @@ input {
   margin-right: 5px;
   border-radius: 5px;
   border: none;
+  background-color: #f5f5f5;
 }
 
 button {
@@ -71,8 +72,11 @@ li {
 
 .input_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 #taskList {

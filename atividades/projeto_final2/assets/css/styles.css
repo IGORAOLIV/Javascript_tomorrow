@@ -1,0 +1,42 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 - 900;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.page {
+  display: flex;
+}
+
+.sideBar {
+  flex: 40%;
+  background-color: #dde4f1;
+  padding: 30px;
+  border-radius: 20px, 0px, 0px, 20px;
+}
+
+.navegacao {
+}
+
+.mainSide {
+  flex: 60%;
+  background-color: #d9d9d9;
+}
+
+#marca {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#logoMarca {
+  padding-right: 10px;
+}
+
+h1 {
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
