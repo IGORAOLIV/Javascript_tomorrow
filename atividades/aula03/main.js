@@ -1,10 +1,12 @@
 // crie aqui as variáveis dos objetos ue irá manipular
+let peso = 0;
+let altura = 0;
 
 // funcao de calculo
-function calcularIMC() {
+function calcularIMC(peso, altura) {
   // crie as variáveis peso e altura, obtendo os dados do html
-  const peso = parseFloat(document.getElementById("peso").value);
-  const altura = parseFloat(document.getElementById("altura").value);
+  peso = parseFloat(document.getElementById("peso"));
+  altura = parseFloat(document.getElementById("altura"));
 
   // será necessário converter as variáveis?
 
@@ -12,7 +14,7 @@ function calcularIMC() {
   const imc = peso((altura / 100) ** 2);
 
   // Atribua o resultado do imc à variável do HTML
-  document.getElementById("result").value = imc.toFixed(2);
+  document.getElementById("result").innerText = imc.toFixed(2);
 }
 
 // adicione o evento listener
