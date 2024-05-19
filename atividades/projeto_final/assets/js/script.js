@@ -9,6 +9,8 @@ function addTask() {
     const li = document.createElement("li");
     li.textContent = taskText;
 
+    li.setAttribute("id", "taskList");
+
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.addEventListener("click", deleteTask);
@@ -59,4 +61,3 @@ function loadTasksFromLocalStorage() {
 
 // Carrega as tarefas quando a página é carregada
 window.onload = loadTasksFromLocalStorage;
-

@@ -40,10 +40,10 @@ input {
 }
 
 button {
-  padding: 0px;
+  padding: 5px;
   cursor: pointer;
-  background-color: #54b5c9;
-  border: none;
+  background-color: #75f0a2;
+  border: 0px;
   border-radius: 5px;
   text-align: center;
 }
@@ -67,4 +67,18 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#taskList {
+  background-color: #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#taskList button {
+  padding: 2.5px 5px;
+  background-color: #e65750;
 }
