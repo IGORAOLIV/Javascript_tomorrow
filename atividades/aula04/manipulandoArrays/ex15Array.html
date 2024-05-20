@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de Array</title>
+        <script type="text/javascript">
+            let nomeAlunos = new Array('claudio','junior','pedro','amanda','patricia','luisa', 'patricia');
+            // let nomeAlunos = ['claudio','junior','pedro','amanda','patricia','luisa', 'patricia'];
+            let nome = 'patricia';
+            let contador = 0;
+            for(let i = 0; i < nomeAlunos.length; i++){
+                if(nomeAlunos[i]==nome){
+                    contador++;
+                }
+            }
+            document.write(`<br><br> A lista possui ${nomeAlunos.length} nomes.`);
+            document.write(`<br><br> O nome <strong>${nome}</strong> aparece ${contador} vez(es) na lista de nomes.`);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
