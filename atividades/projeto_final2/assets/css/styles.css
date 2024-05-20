@@ -1,42 +1,101 @@
-.inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100 - 900;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.page {
-  display: flex;
+.wrapper {
+  background: #d9d9d9;
+  padding: 1rem;
 }
 
-.sideBar {
-  flex: 40%;
-  background-color: #dde4f1;
-  padding: 30px;
-  border-radius: 20px, 0px, 0px, 20px;
+.content {
+  background: #ffffff;
+  width: 100%;
+  height: 100vh;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.navegacao {
+header {
+  float: right;
+  width: calc(100% - 15.5rem);
+  padding: 1rem;
+  color: #20314c;
+  display: inline-flex;
+  gap: 0.2rem;
 }
 
-.mainSide {
-  flex: 60%;
-  background-color: #d9d9d9;
+header .ocultar-sidebar {
+  background: transparent;
+  color: #20314c;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+header .ocultar-sidebar:hover {
+  background: rgba(0, 0, 0, 0.07);
+  color: #20314c;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
 }
 
-#marca {
-  display: flex;
+header .titulo-pagina {
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+nav {
+  background: #dce4f1;
+  color: #313548;
+  width: 15.5rem;
+  height: 100%;
+  padding: 1.2rem;
+}
+
+nav .logo {
+  display: inline-flex;
   align-items: center;
-  justify-content: start;
+  gap: 0.35rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+nav .logo i {
+  font-size: 1.5rem;
+  color: #589156;
 }
 
-#logoMarca {
-  padding-right: 10px;
+nav .navegacao {
+  padding: 1.5rem 0.5rem;
 }
 
-h1 {
-  font-family: Inter, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
+nav .navegacao .categoria {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  border-radius: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+nav .navegacao .categoria:hover {
+  background: #d3dbe8;
+}
+nav .navegacao .categoria:active {
+  background: #e6eaf3;
+}
+nav .navegacao .categoria .titulo {
+  font-weight: bold;
+}
+nav .navegacao .categoria .titulo i {
+  margin-right: 0.25rem;
+}
+nav .navegacao .categoria span {
+  color: #717791;
+  float: right;
 }

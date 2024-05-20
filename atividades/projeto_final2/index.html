@@ -4,64 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo</title>
+  <script src="https://kit.fontawesome.com/76785fb994.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/atividades/projeto_final2/assets/css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <title>MyTask</title>
 </head>
 
 <body>
-  <div class="page">
-    <div class="sideBar">
-      <div class="sideGroup">
-        <div id="marca">
-          <img src="/atividades/projeto_final2/assets/img/check-circle.svg" alt="Logomarca" id="logoMarca">
-          <h1>MyTask</h1>
-        </div>
-        <div class="navegacao">
-          <div id="todas">
-            <img src="/atividades/projeto_final2/assets/icons/Icone=lista.svg" alt="Todas">
-            <h4>Todas</h4>
-            <p id="quantidadeTodas">
-              5
-            </p>
-          </div>
-          <div id="hoje">
-            <img src="/atividades/projeto_final2/assets/icons/Icone=hoje.svg" alt="Hoje">
-            <h4>Hoje</h4>
-            <p id="quantidadeHoje">2</p>
-          </div>
-          <div id="amanha">
-            <img src="/atividades/projeto_final2/assets/icons/Icone=amanha.svg" alt="Amanhã">
-            <h4>Amanhã</h4>
-            <p id="quantidadeAmanha">3</p>
-          </div>
-          <div id="7dias">
-            <img src="/atividades/projeto_final2/assets/icons/Icone=7dias.svg" alt="Próximos 7 dias">
-            <h4>Próximos 7 dias</h4>
-            <p id="quantidade7dias">6</p>
-          </div>
-        </div>
 
-      </div>
-      <div class="profile">
-        <img src="/atividades/projeto_final2/assets/img/Avatar=Avatar4.png" alt="Profile">
-        <h4>Pedro Pedreira</h4>
-      </div>
-    </div>
-    <div class="mainSide">
-      <div class="tituloPrincipal">
-        <img src="/atividades/projeto_final2/assets/icons/Icone=hoje.svg" alt="Hoje">
-        <h3>Hoje</h3>
-      </div>
-      <div id="inputTarefas">
-        <input type="text" id="taskInput" placeholder="Escreva sua tarefa.">
-        <button><img src="/atividades/projeto_final2/assets/icons/Icone=hoje.svg" alt="Hoje">Hoje</button>
-      </div>
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <button class="ocultar-sidebar"><i class="fa-solid fa-list"></i></button>
+        <div class="titulo-pagina">Hoje</div>
+      </header>
+      <nav>
+        <div class="logo">
+          <i class="fa-regular fa-circle-check"></i>
+          <div class="texto">MyTask</div>
+        </div>
+        <ul class="navegacao">
+          <li class="categoria">
+            <div class="titulo">
+              <i class="fa-solid fa-bars"></i>
+              Todas
+            </div>
+            <span>9</span>
+          </li>
+          <li class="categoria">
+            <div class="titulo">
+              <i class="fa-solid fa-calendar"></i>
+              Hoje
+            </div>
+            <span>2</span>
+          </li>
+          <li class="categoria">
+            <div class="titulo">
+              <i class="fa-solid fa-cloud-sun"></i>
+              Amanhã
+            </div>
+            <span>3</span>
+          </li>
+          <li class="categoria">
+            <div class="titulo">
+              <i class="fa-solid fa-shuffle"></i>
+              Próximos 7 Dias
+            </div>
+            <span>6</span>
+          </li>
+        </ul>
+        <div class="profile">
+          <img src="/atividades/projeto_final2/assets/img/Avatar=Avatar4.png" alt="Profile">
+          <div class="texto">Nome Usuário</div>
+        </div>
+      </nav>
+      <section class="container">
+        <div class="inpultTask">
+          <input type="text" placeholder="Digite sua tarefa">
+        </div>
+      </section>
     </div>
   </div>
-  <script src="/atividades/projeto_final2/assets/js/script.js"></script>
 </body>
 
 </html>
