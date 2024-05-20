@@ -60,12 +60,49 @@ function exibirPessoas() {
         infoElement.appendChild(pessoaElement);
     }
 }
+// Função para consultar pessoas na página
+function consultarPessoa () {
 
-function name(params) {
+    let consultaNome = nomeInput.value;
+    let pessoaEncontrada = pessoas.find(pessoas => pessoas.nome === consultaNome); 
+    
+
+    if (pessoaEncontrada) {
+        idadeInput.value = pessoaEncontrada.idade
+        profissaoInput.value = pessoaEncontrada.profissao
+    } else {
+        alert('Pessoa não cadastrada.');
+    }
+}
+
+function alterarPessoas () {
+    let consultaNome = nomeInput.value;
+    let pessoaIndex = pessoas.findIndex(pessoas => pessoas.nome === consultaNome);
+
+    if (pessoaIndex >= 0) {
+        pessoas[pessoaIndex].idade = idadeInput.value;
+        pessoas[pessoaIndex].profissao = profissaoInput.value;
+        
+        exibirPessoas();
+    }
     
 }
 
+function excluirPessoas () {
+    let consultaNome = nomeInput.value;
+    let pessoaIndex = pessoas.findIndex(pessoas => pessoas.nome === consultaNome);
+
+    if (pessoaIndex >= 0) {
+        pessoas.splice(pessoaIndex, 1);
+        
+        exibirPessoas();
+    }
+    
+}
 // Exibindo as pessoas na página ao carregar
 exibirPessoas();
 
 botaoAdicionar.addEventListener("click", adicionarPessoa);
+botaoConsultar.addEventListener("click", consultarPessoa);
+botaoAlterar.addEventListener("click", alterarPessoas);
+botaoExcluir.addEventListener("click", excluirPessoas);
