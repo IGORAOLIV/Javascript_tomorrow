@@ -12,7 +12,8 @@ function addTask() {
     li.setAttribute("id", "taskList");
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
+    deleteBtn.innerHTML =
+      '<img src="/atividades/projeto_final/assets/icons/delete_24dp_FILL0_wght400_GRAD0_opsz24.svg">';
     deleteBtn.addEventListener("click", deleteTask);
     li.appendChild(deleteBtn);
 
@@ -48,6 +49,7 @@ function loadTasksFromLocalStorage() {
     tasks.forEach((taskText) => {
       const li = document.createElement("li");
       li.textContent = taskText;
+      li.setAttribute("id", "taskList");
 
       const deleteBtn = document.createElement("button");
       deleteBtn.textContent = "Delete";

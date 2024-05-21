@@ -7,16 +7,19 @@ body {
 }
 
 .wrapper {
-  background: #d9d9d9;
   padding: 1rem;
 }
 
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 50px;
-  background: rgb(204,213,235);
-background: linear-gradient(135deg, rgba(204,213,235,1) 6%, rgba(203,232,234,1) 51%, rgba(204,235,216,1) 93%);
+  background: rgb(204, 213, 235);
+  background: linear-gradient(
+    135deg,
+    rgba(204, 213, 235, 1) 6%,
+    rgba(203, 232, 234, 1) 51%,
+    rgba(204, 235, 216, 1) 93%
+  );
 }
 
 .content {
@@ -53,16 +56,18 @@ input {
 }
 
 button {
-  padding: 5px;
+  padding: 2px;
   cursor: pointer;
   background-color: #75f0a2;
   border: 0px;
   border-radius: 5px;
-  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: #60c485;
 }
 
 ul {
@@ -95,6 +100,9 @@ li {
 }
 
 #taskList button {
-  padding: 2.5px 5px;
   background-color: #e65750;
+}
+
+#taskList button:hover {
+  background-color: #ab413c;
 }
