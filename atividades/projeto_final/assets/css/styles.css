@@ -106,3 +106,9 @@ li {
 #taskList button:hover {
   background-color: #ab413c;
 }
+
+#taskDate {
+  color: #ccc; /* Cor cinza claro */
+  font-size: 12px; /* Tamanho da fonte */
+  font-weight: lighter;
+}
