@@ -7,6 +7,8 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -25,6 +27,7 @@ body {
 .content {
   background: #ffffff;
   width: 100%;
+  max-width: 550px;
   height: 100vh;
   border-radius: 1rem;
   overflow: hidden;
@@ -46,7 +49,7 @@ h1 {
 }
 
 input {
-  width: 200px;
+  width: 350px;
   padding: 5px;
   margin-right: 5px;
   border-radius: 5px;
