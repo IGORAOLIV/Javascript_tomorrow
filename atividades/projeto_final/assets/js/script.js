@@ -18,18 +18,16 @@ function addTask() {
     li.setAttribute("id", "taskList");
 
     const deleteIcon = document.createElement("img");
-    const deleteBtn = document.createElement("button");
-
+  
     deleteIcon.src =
       "/atividades/projeto_final/assets/icons/delete_24dp_FILL0_wght400_GRAD0_opsz24.svg";
     deleteIcon.alt = "Apagar";
 
-    deleteBtn.appendChild(deleteIcon);
-
-    deleteBtn.addEventListener("click", deleteTask);
-
+    
+    deleteIcon.addEventListener("click", deleteTask);
+    
     li.appendChild(div);
-    li.appendChild(deleteBtn);
+    li.appendChild(deleteIcon);
     div.appendChild(p);
     div.appendChild(span);
 
@@ -81,20 +79,20 @@ function loadTasksFromLocalStorage() {
       span.textContent = `${getCurrentDate()}`;
       li.setAttribute("id", "taskList");
 
-      const deleteBtn = document.createElement("button");
-
+      const deleteIcon = document.createElement("img");
+  
       deleteIcon.src =
         "/atividades/projeto_final/assets/icons/delete_24dp_FILL0_wght400_GRAD0_opsz24.svg";
       deleteIcon.alt = "Apagar";
 
-      deleteBtn.appendChild(deleteIcon);
-
-      deleteBtn.addEventListener("click", deleteTask);
+    
       deleteIcon.addEventListener("click", deleteTask);
+    
       li.appendChild(div);
-      li.appendChild(deleteBtn);
+      li.appendChild(deleteIcon);
       div.appendChild(p);
       div.appendChild(span);
+
 
       taskList.appendChild(li);
     });
