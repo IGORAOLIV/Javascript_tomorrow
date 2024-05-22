@@ -27,7 +27,7 @@ function addTask() {
     deleteBtn.appendChild(deleteIcon);
 
     deleteBtn.addEventListener("click", deleteTask);
-    deleteIcon.addEventListener("click", deleteTask);
+
     li.appendChild(div);
     li.appendChild(deleteBtn);
     div.appendChild(p);
@@ -38,7 +38,7 @@ function addTask() {
     saveTasksToLocalStorage(); // Salva as tarefas após adicionar uma nova
   }
 }
-
+// 
 function getCurrentDate() {
   const now = new Date();
   let formattedDate = `${now.getDate()}/${
@@ -81,7 +81,6 @@ function loadTasksFromLocalStorage() {
       span.textContent = `${getCurrentDate()}`;
       li.setAttribute("id", "taskList");
 
-      const deleteIcon = document.createElement("img");
       const deleteBtn = document.createElement("button");
 
       deleteIcon.src =
