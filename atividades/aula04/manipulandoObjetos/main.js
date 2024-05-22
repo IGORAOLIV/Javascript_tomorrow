@@ -63,9 +63,9 @@ function exibirPessoas() {
 // Função para consultar pessoas na página
 function consultarPessoa () {
 
-    let consultaNome = nomeInput.value;
-    let pessoaEncontrada = pessoas.find(pessoas => pessoas.nome === consultaNome); 
-    
+    // let consultaNome = nomeInput.value.trim();
+    // let pessoaEncontrada = pessoas.find(pessoas => pessoas.nome === consultaNome); 
+    let pessoaEncontrada = consultarNome();
 
     if (pessoaEncontrada) {
         idadeInput.value = pessoaEncontrada.idade
@@ -75,9 +75,24 @@ function consultarPessoa () {
     }
 }
 
-function alterarPessoas () {
-    let consultaNome = nomeInput.value;
+function consultarNome() {
+    let consultaNome = nomeInput.value.trim();
+    let pessoaEncontrada = pessoas.find(pessoas => pessoas.nome === consultaNome);
+
+    return(pessoaEncontrada);
+}
+
+function consultarIndiceNome() {
+    let consultaNome = nomeInput.value.trim();
     let pessoaIndex = pessoas.findIndex(pessoas => pessoas.nome === consultaNome);
+
+    return(pessoaIndex);
+}
+
+function alterarPessoas () {
+    // let consultaNome = nomeInput.value.trim();
+    // let pessoaIndex = pessoas.findIndex(pessoas => pessoas.nome === consultaNome);
+    let pessoaIndex = consultarIndiceNome();
 
     if (pessoaIndex >= 0) {
         pessoas[pessoaIndex].idade = idadeInput.value;

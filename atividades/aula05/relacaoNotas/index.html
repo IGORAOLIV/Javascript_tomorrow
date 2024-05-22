@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Notas e Faltas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Cadastro de Notas e Faltas dos Alunos</h1>
+  <div class="form-container">
+    <form id="student-form">
+      <label for="matricula">Matrícula:</label>
+      <input type="text" id="matricula" required><br>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required><br>
+
+      <label for="nota">Nota:</label>
+      <input type="number" id="nota" required><br>
+
+      <label for="faltas">Número de Faltas:</label>
+      <input type="number" id="faltas" required><br>
+
+      <button type="button" id="confirm-button">Confirmar</button>
+    </form>
+  </div>
+
+  <div class="results">
+    <h2>Resultado</h2>
+    <table id="student-table">
+        <tr>
+            <th id="matricula-header">Matrícula </th> 
+            <th id="nome-header">Nome </th> 
+            <th>Nota</th>
+            <th>Faltas</th>
+            <th>Situação</th>
+          </tr>
+          
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Lugares de Salvador</title>
+</head>
+<body>
+    <h1>Lugares de Salvador</h1>
+
+    <div class="place-container">
+        <div class="place">
+            <h2>Baía de Todos os Santos</h2>
+            <img src="image/baiaTodosSantos.jpg" alt="Baía de Todos os Santos" >
+            <p class="place-description">Vista aérea da Baía de Todos os Santos</p>
+            <p><strong>Total de Votos:</strong> <span id="votes1">0</span></p>
+            <button class="vote-button" onclick="vote(1)">Votar</button>
+        </div>
+        <div class="place">
+            <h2>Bambuzal do Aeroporto</h2>
+            <img src="image/bambuzalSalvador.jpeg" alt="Bambuzal do Aeroporto 2 de Julho - Salvador">
+            <p class="place-description">Bambuzal do Aeroporto 2 de Julho</p>
+            <p><strong>Total de Votos:</strong> <span id="votes2">0</span></p>
+            <button class="vote-button" onclick="vote(2)">Votar</button>
+        </div>
+        <div class="place">
+            <h2>Igreja do Bonfim</h2>
+            <img src="image/igrejaBonfim.jpg" alt="Igreja do Bonfim" width="360" height="210">
+            <p class="place-description">Vista da Igreja do Bonfim</p>
+            <p><strong>Total de Votos:</strong> <span id="votes3">0</span></p>
+            <button class="vote-button" onclick="vote(3)">Votar</button>
+        </div>
+    </div>
+
+    <div id="leaderboard">
+        <h2>Classificação</h2>
+        <p>Lugar mais votado aparecerá aqui.</p>
+    </div>
+
+    <div id="footer">
+        <p>© 2023 Lugares de Salvador</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
