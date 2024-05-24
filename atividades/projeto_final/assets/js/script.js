@@ -30,13 +30,13 @@ function addTask() {
     li.appendChild(deleteIcon);
     div.appendChild(p);
     div.appendChild(span);
-
     taskList.appendChild(li);
+
     taskInput.value = "";
     saveTasksToLocalStorage(); // Salva as tarefas após adicionar uma nova
   }
 }
-// 
+// Pega a data da task
 function getCurrentDate() {
   const now = new Date();
   let formattedDate = `${now.getDate()}/${
@@ -92,8 +92,6 @@ function loadTasksFromLocalStorage() {
       li.appendChild(deleteIcon);
       div.appendChild(p);
       div.appendChild(span);
-
-
       taskList.appendChild(li);
     });
   }
